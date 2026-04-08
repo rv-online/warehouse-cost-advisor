@@ -1,0 +1,4 @@
+{"query_id": "q_11", "workload": "finance", "compute_seconds": 62, "cache_hit": false}
+{"query_id": "q_12", "workload": "finance", "compute_seconds": 8, "cache_hit": true}
+{"query_id": "q_13", "workload": "growth", "compute_seconds": 41, "cache_hit": false}
+{"query_id": "q_14", "workload": "ops", "compute_seconds": 77, "cache_hit": false}
