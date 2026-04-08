@@ -1,21 +1,29 @@
 # Warehouse Cost Advisor
 
-Python analytics project for query cost analysis. It packages a small but reviewable workflow with deterministic scoring, JSON outputs, and unit tests.
+Python analytics project for warehouse spend analysis, cost-driver attribution, and recommendation outputs.
 
-## What It Shows
+## Why This Exists
 
-- warehouse optimization, compute attribution, and savings recommendations
-- clear ingestion and summarization logic
-- CLI entrypoint and test coverage
+Built to read like internal ops-finance tooling where data engineering meets business cost optimization.
 
-## Run
+## What This Demonstrates
+
+- cost-driver breakdowns and recommendation logic
+- analytics outputs tailored to operational reviews
+- clear, testable summarization flow
+
+## Architecture
+
+1. cost inputs are grouped into operational categories
+1. analysis logic attributes spend and flags optimization opportunities
+1. results summarize the most expensive drivers and likely actions
+
+## Run It
 
 ```bash
-python -m src.analyzer --input data/queries.ndjson --output out/report.json
+python -m unittest
 ```
 
-## Test
+## Verification
 
-```bash
-python -m unittest discover -s tests
-```
+Run `python -m unittest` to validate cost-analysis behavior.
